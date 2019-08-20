@@ -1,0 +1,38 @@
+@import "abstracts/variables",
+"abstracts/mixins",
+"abstracts/functions",
+"abstracts/fonts",
+"base/fonts",
+"snippets";
+
+$color      : #555678;
+$color-text : #25ff24;
+
+$innert     : 35px;
+
+
+.box {
+  background-color : #fff;
+  color            : $color;
+  width            : 80%;
+  height           : 200px;
+  margin           : 0 auto;
+  font-family      : "roboto-example-bold";
+  
+  display : flex;
+  flex-direction: column;
+  
+  &-inner {
+	background-color : blue;
+	min-width        : $innert;
+	min-height       : $innert;
+  }
+  
+  &-text {
+	color            : $color-text;
+	background-color : #ff00e8;
+	font-family      : "roboto-example";
+	
+  }
+}
+@import "layouts/footer";
